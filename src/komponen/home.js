@@ -1,6 +1,5 @@
-function tampilNama(nama) {
-   console.log(`hallo ${nama}`);
+import './style.css'
+
+export function tampilNama(nama) {
+   return `hallo ${nama}`;
 }
-
-
-module.exports = tampilNama

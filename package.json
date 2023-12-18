@@ -4,13 +4,19 @@
    "description": "[.] stater dari tanggal 15-12-2023 <br> [.] pemula javascript",
    "scripts": {
       "install-dep": "npm install --no-bin-links",
-      "build" : "node node_modules/webpack/bin/webpack"
-   }, 
+      "build": "node node_modules/webpack/bin/webpack --config webpack.prod.js",
+      "dev": "node node_modules/webpack/bin/webpack --config webpack.dev.js"
+   },
    "keywords": [],
-   "author": "",
+   "private": true,
+   "author": "mas haekal",
    "license": "ISC",
    "dependencies": {
+      "css-loader": "^6.8.1",
+      "html-webpack-plugin": "^5.5.4",
+      "style-loader": "^3.3.3",
       "webpack": "^5.89.0",
-      "webpack-cli": "^5.1.4"
+      "webpack-cli": "^5.1.4",
+      "webpack-merge": "^5.10.0"
    }
 }
